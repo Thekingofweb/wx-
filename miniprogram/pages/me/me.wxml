@@ -1,0 +1,4 @@
+<view bindtap="clickMe">点击</view>
+<button bindtap="addNewValue">增加新值</button>
+<view>{{object.new}}</view>
+<view :if="{{show}}">324234</view>

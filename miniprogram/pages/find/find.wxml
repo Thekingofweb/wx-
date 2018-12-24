@@ -1,0 +1,10 @@
+<view class="temp_content">
+  <view class="today">
+    <view class="now_temp">{{now_temp}}C</view>
+    <view class="temp_durlation">{{min}}C/{{max}}C</view>
+    <view class="werther">{{werther}}</view>
+    <view class="city">{{city}}</view>
+    <view class="now_date">{{now_date}}</view>
+    <view class="tips">{{tips}}</view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<template name="cooks">
+  <block wx:for="{{array}}">
+      <view class="item flex">
+        <view class='list_left_item'>
+          <image src='{{item.img}}'></image>
+        </view>
+        <view class="list_right_item">
+          <view class="right_item_top">{{item.title}}</view>
+          <view class="right_item_bottom flex">
+            <view class="bottom_left">{{item.type}}</view>
+            <view class="bottom_right flex">
+              <view class="looked">{{tem.liulan}}</view>
+              <view class="talked">{{item.pinlun}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+</template>

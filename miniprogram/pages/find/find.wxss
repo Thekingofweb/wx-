@@ -1,0 +1,14 @@
+.temp_content{
+  font-size: 14px;
+  /* font-family: 微软雅黑, */
+  color: "#333333",
+
+}
+.today{
+  text-align: center;
+  padding-top: 20px;
+}
+.temp_content view{
+  height: 30px;
+  line-height: 30px;
+}

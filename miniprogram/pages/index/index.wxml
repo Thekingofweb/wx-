@@ -1,0 +1,84 @@
+
+<!-- <view class="container"> -->
+
+  <!-- 用户 openid -->
+  <!-- <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view>
+      <button class="userinfo-nickname" bindtap="onGetOpenid">请点击获取 openid{{tip}}</button>
+    </view>
+  </view> -->
+
+
+  <!-- 上传图片 -->
+  <!-- <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>上传图片</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view> -->
+
+
+  <!-- 操作数据库 -->
+  <!-- <view class="uploader">
+    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+      <text>前端操作数据库</text>
+    </navigator>
+  </view> -->
+
+  <!-- 新建云函数 -->
+  <!-- <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+  </view>
+
+</view> -->
+<view class="index_content">
+  <view class="index_top">
+    <swiper indicator-dots='true' indicator-color='rgba(0,0,0,0.3)' indicator-active-color='#04997C' autoplay="{{autoplay}}" interval='5000' class='banner' style='height:{{bannerHeight}}px'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode='{{mod[1]}}' bindload='imageLoad'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="search_box">
+    <input type='input' placeholder='请输入美食名称' placeholder-class="input_placeholder"></input>
+  </view>
+  <view class="nav_content">
+    <view class="nav_item"  hover="true" hover-class='hover_style'>
+      <text class="icon-fenlei iconfont"></text>
+      <view class="nav_word">美食分类</view>
+    </view>
+    <view class="nav_item"  hover="true" hover-class='hover_style'  bindtap='jumto' data-url="../scroll/scroll">
+      <text class="iconfont icon-shipin"></text>
+      <view class="nav_word" id='video' >视频</view>
+    </view>
+    <view class="nav_item"  hover="true" hover-class='hover_style'>
+      <text class="icon-xiangqingjieshao iconfont"></text>
+      <view class="nav_word">美食介绍</view>
+    </view>
+    <view class="nav_item"  hover="true" hover-class='hover_style'>
+      <text class="icon-goumai iconfont"></text>
+      <view class="nav_word">闪购</view>
+    </view>
+  </view>
+  <view class="head">
+    <text>美食头条</text>
+    <view class="right_ico">></view>
+  </view>
+  <!-- 通过使用  import 引入咱们的模板文件 -->
+  <import src="../template/template"></import>
+  <view class="list">
+    <template is="cooks" data="{{array}}"></template> 
+  </view>
+</view>

@@ -1,0 +1,38 @@
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list_left_item {
+  width: 80rpx;
+  height: 80rpx;
+}
+.list_left_item image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.list{
+  font-size: 26rpx;
+  color: #666;
+  padding: 0 24rpx;
+  background: #fff;
+}
+.list .item{
+  border-bottom: 1px solid #eee;
+  flex-direction: row;
+  padding: 10rpx 0;
+}
+.list_right_item{
+  flex: 1;
+  text-align: left;
+  margin-left: 20rpx;
+}
+.right_item_top{
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 600;
+}
+.hover_style{
+  color: #fff;
+  background: #eac;
+}
